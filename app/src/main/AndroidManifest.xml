@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mahe.billpayment">
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="Bill Payment App">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".BillPayment"
+            android:label="Bill Payment"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".Changepwd"
+            android:parentActivityName=".Settings"
+            android:label="Changepwd" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Settings" />
+        </activity>
+
+        <activity
+            android:name=".Check"
+            android:parentActivityName=".PaymentDetails"
+            android:label="Check" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PaymentDetails" />
+        </activity>
+
+        <activity
+            android:name=".ConfirmPayment"
+            android:parentActivityName=".BillPayment"
+            android:label="Confirm Payment" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BillPayment" />
+        </activity>
+
+        <activity
+            android:name=".DatacardBill"
+            android:parentActivityName=".BillPayment"
+            android:label="Datacard Bill" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BillPayment" />
+        </activity>
+
+        <activity
+            android:name=".LandlineBill"
+            android:parentActivityName=".BillPayment"
+            android:label="Landline Bill" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BillPayment" />
+        </activity>
+
+        <activity
+            android:name=".Login"
+            android:parentActivityName=".MainActivity"
+            android:label="Login" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".MobileBill"
+            android:parentActivityName=".BillPayment"
+            android:label="Mobile Bill" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BillPayment" />
+        </activity>
+
+        <activity
+            android:name=".OrderHistory"
+            android:parentActivityName=".BillPayment"
+            android:label="OrderHistory" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BillPayment" />
+        </activity>
+
+        <activity
+            android:name=".PaymentDetails"
+            android:parentActivityName=".ConfirmPayment"
+            android:label="Payment Details" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ConfirmPayment" />
+        </activity>
+
+        <activity
+            android:name=".Settings"
+            android:parentActivityName=".BillPayment"
+            android:label="Settings" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BillPayment" />
+        </activity>
+
+        <activity
+            android:name=".SignUp"
+            android:parentActivityName=".MainActivity"
+            android:label="Sign Up" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".Successful"
+            android:parentActivityName=".Check"
+            android:label="Successful" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Check" />
+        </activity>
+
+        <activity
+            android:name=".ViewProfile"
+            android:parentActivityName=".Settings"
+            android:label="ViewProfile" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Settings" />
+        </activity>
+
+
+
+    </application>
+
+</manifest>

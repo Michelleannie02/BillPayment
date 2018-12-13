@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:backgroundTint="@android:color/background_light"
+
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="none"
+        android:text="Select service:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.79"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button3"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/holo_red_light"
+            android:onClick="GoToMobileBill"
+            android:text="Mobile Bill Payment" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="202dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/button3"
+            android:layout_below="@+id/button"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/holo_red_light"
+            android:onClick="GoToDatacardBill"
+            android:text="Data Card Payment" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_red_light"
+            android:onClick="GoToLandlineBill"
+            android:text="Landline Bill Payment"
+            android:layout_below="@+id/button2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/rbmid"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:onClick="GoToMain"
+            android:text="Logout" />
+
+        <Button
+            android:id="@+id/order"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:onClick="GoToOrderHistory"
+            android:text="Order History" />
+
+        <Button
+            android:id="@+id/rbright"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:onClick="GoToSettings"
+            android:text="Settings" />
+
+    </LinearLayout>
+</LinearLayout>
